@@ -1,0 +1,6 @@
+div {
+    padding: 100px 80px;
+    font-size: 15px;
+    line-height: 180%;
+    background: url('img/coner_right_bottom.png') no-repeat right bottom, url('img/coner_right_top.png') no-repeat right top, url('img/coner_left_bottom.png') no-repeat left bottom, url('img/coner_left_top.png') no-repeat left top, url('img/bottom.png') 105px 100% repeat-x, url('img/top.png') 0 0 repeat-x, url('img/right.png') 100% 100% repeat-y, url('img/left.png') 0 0 repeat-y
+}
