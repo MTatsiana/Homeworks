@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+div {
+    display: block;
+    width: 750px;
+    padding: 16px 0;
+}
+
+ul {
+    list-style: none;
+    /*убираем маркеры списка*/
+    padding-top: 0;
+    padding-left: 0;
+}
+
+a {
+    color: green;
+    /*меняем цвет ссылок*/
+    padding: 10px;
+    font-family: arial;
+}
+
+a:hover {
+    color: red;
+    /*добавляем эффект при наведении*/
+}
+
+.first-block li:not(:last-child) a,
+.four-block li:not(:last-child) a {
+    border-right: 3px solid red;
+    /*добавляем бордюр справа кроме последнего элемента*/
+}
+
+.first-block li {
+    float: left;
+    /*размещаем список горизонтально для реализации меню*/
+}
+
+.second-block li {
+    display: inline;
+    margin-right: -4px;
+}
+
+.second-block li+li::before,
+.third-block li+li::before {
+    content: '|';
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.third-block li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.four-block ul {
+    display: flex;
+}
