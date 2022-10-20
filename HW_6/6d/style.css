@@ -1,0 +1,44 @@
+h1,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1+p {
+    color: green;
+}
+
+h3 {
+    color: red;
+}
+
+h3+p {
+    color: blue;
+    font-weight: bold;
+}
+
+p:last-child {
+    color: blue;
+    font-style: italic;
+}
+
+a::before {
+    display: inline-block;
+}
+
+.first-block [href*="chesspro.ru/statistic/botvinnik.shtml"]::before {
+    content: url(extref.png);
+}
+
+.second-block [href*="chesspro.ru/statistic/karpov.shtml"]::before {
+    content: url(extref.png);
+}
+
+.third-block [href*="chesspro.ru/statistic/kasparov.shtml"]::before {
+    content: url(extref.png);
+}
+
+.last {
+    margin-top: 40px;
+}
